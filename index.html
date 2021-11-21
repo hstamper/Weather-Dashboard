@@ -1,38 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/style.css"> 
+    <link rel="stylesheet" href="assets/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
     <title>Weather Dashboard</title>
 </head>
 
 <body>
-    <header class="text-center text-light p-3" style= "background-color: rgb(48, 65, 155);">
+    <header class="text-center text-light p-3" style="background-color: rgb(48, 65, 155);">
         <h1><i class="justify-space-between"></i>Weather Dashboard</h1>
     </header>
-<div class="container">
-    <div class="row-align-items-end">
-    <div class="col-12 col-md-4">
-        <div class="card" style="border-color: white;">
-            <h3 class="card-header" style="border-color: white;">Search for a City:</h3>
-            <form id="user-form" class="card-body" style="border-color: white;">
-                <input name="city" id="city" type="text" autofocus="true" class="form-input" placeholder="Jacksonville"/>
-                <buton type="search" class="btn" style="background-color: lightskyblue;">Search</buton>
-            </form>
+
+    <main class="m-4 p-4">
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-3">
+                    <h3>Search for a City:</h3>
+                    <form class="form-inline" id="search-form">
+                        <input type="search" class="form-control mb-3 ds-input" id="cityname"
+                            placeholder="Jacksonville" />
+                        <buton type="submit" class="btn btn-primary mb-3" style="background-color: lightskyblue;">Search</buton>
+                    </form>
+                    <ul class="list-group" id="search-history"></ul>
+                </div>
+                <div class="col-md-9">
+                    <div class="card mt-2">
+                        <div class="card-body">
+                            <div class="d-flex flex-row">
+                                <h2 class="card-title align-self-center" id="main-city-name"></h2>
+                            </div>
+                            <h6 class="card-subtitle text-muted" id="main-city-temp">Tempature: </h6>
+                            <h6 class="card-subtitle mt-3 text-muted" id="main-city-humid">Humidity: </h6>
+                            <h6 class="card-subtitle mt-3 text-muted" id="main-city-wind">Wind Speed: </h6>
+                            <h6 class="card-subtitle mt-3 text-muted" id="main-city-uv">UV Index: <span id="uv-box" class="px-2 py-1 mb-1 text-light rounded font-weight-normal"></span></h6>
+                        </div>
+                    </div>
+                    <div>
+                        <h2 class="card-title mt-3">5-Day Forecast</h2>
+                        <div class="row justify-content-between" id="five-day">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="col-12 col-md-6">
-
-    
-    </div>
-    </div>
-</div>
-   
+    </main>
 
 
-    
+
+
+
 </body>
+
 </html>
