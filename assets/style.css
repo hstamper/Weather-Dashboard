@@ -48,3 +48,7 @@
 #yes {
     display: flex;
 }
+
+header {
+  background-image: linear-gradient(to right, lightblue, darkblue);
+}
