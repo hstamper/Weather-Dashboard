@@ -15,3 +15,5 @@ https://hstamper.github.io/Weather-Dashboard/
 Made/Created by Hilliard E. Stamper III
 
 ## 2021 Hilliard E. Stamper III - Weather Dashboard 
+
+![image](https://user-images.githubusercontent.com/91726280/155821298-0e998768-0fdd-4155-8b5e-1b0bbd1af77a.png)
